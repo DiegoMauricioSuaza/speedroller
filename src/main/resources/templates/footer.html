@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer</title>
+    <style>
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+            font-family: Arial, sans-serif;
+            border-top: 5px solid #007BFF;
+        }
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .footer-content a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+        .social-links {
+            margin-top: 15px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Fragmento llamado "footer" -->
+    <footer th:fragment="footer">
+        <div class="footer-content">
+            <p>
+                <strong>Escuela de Patinaje Ágiles en Movimiento</strong><br>
+                Formando campeones sobre ruedas desde 2010.<br>
+                📍 Dirección: Av. Deportes 1234, Ciudad Activa<br>
+                📞 Teléfono: (555) 123-4567 |
+                ✉️ Correo: contacto@patinajeagil.com
+            </p>
+            <div class="social-links">
+                <a href="#" target="_blank">Instagram</a> |
+                <a href="#" target="_blank">Facebook</a> |
+                <a href="#" target="_blank">YouTube</a>
+            </div>
+            <hr>
+            <p style="font-size: 0.9em; color: #aaa;">
+                &copy; <span th:text="${#dates.year()}"></span> Escuela de Patinaje Ágiles en Movimiento. 
+                Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
