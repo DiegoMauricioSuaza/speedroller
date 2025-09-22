@@ -12,11 +12,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class indexController {
     
     @GetMapping("home")
-    public String Home(){
+    public String Home() {
         return "index";
     }
     
-
+      @GetMapping("/mision")
+    public String mision() {
+        return "mision";
+    }
 }
 
 //localhost:8085/index 
