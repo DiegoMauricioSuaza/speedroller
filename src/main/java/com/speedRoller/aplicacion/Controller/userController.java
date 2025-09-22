@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.speedroller.aplicacion.Service.userService;
-import Model.userModel;
+import com.speedroller.aplicacion.Model.userModel;
 import jakarta.validation.Valid;
 
 @Controller
