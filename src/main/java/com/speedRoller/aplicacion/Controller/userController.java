@@ -1,4 +1,4 @@
-package com.speedRoller.aplicacion.Controller;
+package com.speedroller.aplicacion.Controller;
 
 import java.util.List;
 
@@ -14,9 +14,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.speedRoller.aplicacion.Service.userService;
-import com.speedroller.app_v1.Model.userModel;
-
+import com.speedroller.aplicacion.Service.userService;
 import Model.userModel;
 import jakarta.validation.Valid;
 

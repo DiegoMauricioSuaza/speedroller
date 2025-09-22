@@ -1,13 +1,10 @@
-package com.speedRoller.aplicacion.Repository;
+package com.speedroller.aplicacion.Repository;
 
 import org.springframework.stereotype.Repository;
-
-import com.speedroller.app_v1.Model.userModel;
-
 import org.springframework.data.jpa.repository.JpaRepository;
+import Model.userModel;
+import Model.userModel;
 
 @Repository
-public interface UserRepository extends JpaRepository<userModel, Long>
-{
-    
+public interface UserRepository extends JpaRepository<userModel, Long> {
 }

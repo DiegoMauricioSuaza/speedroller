@@ -1,12 +1,12 @@
-package com.speedRoller.aplicacion.Service;
+package com.speedroller.aplicacion.Service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import com.speedRoller.aplicacion.Repository.UserRepository;
-import com.speedRoller.aplicacion.Model.userModel;
+
+import com.speedroller.aplicacion.Repository.UserRepository;
 
 import Model.userModel;
 

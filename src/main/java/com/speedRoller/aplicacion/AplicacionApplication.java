@@ -1,4 +1,4 @@
-package com.speedRoller.aplicacion;
+package com.speedroller.aplicacion;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

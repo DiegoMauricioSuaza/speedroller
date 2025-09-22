@@ -1,4 +1,4 @@
-package com.speedRoller.aplicacion.Config;
+package com.speedroller.aplicacion.Config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
