@@ -21,10 +21,9 @@ import jakarta.validation.Valid;
 @Controller
 @RequestMapping("/user")
 public class userController {
-  
+
     @Autowired
     userService usuarioService;
-
 
     @GetMapping("/listar")
     public String listarUser(Model model) {
@@ -40,21 +39,17 @@ public class userController {
         return "/user/form_user";
     }
 
+
     // Guardar el usuario enviado por el formulario
     @PostMapping("/guardar")
     public String guardarUsuario(@Valid @ModelAttribute("usuario") userModel usuario, BindingResult result) {
-        
-    
-
         // ¿Hubo errores de validación?
         if (result.hasErrors()) {
             return "/user/form_user"; // vuelve al formulario, con los errores
         }
-        
         // Si no hay errores → guarda y redirige
         usuarioService.guardar(usuario); // guarda en BD
         System.out.println("¡Usuario válido! Guardando a : " + usuario.getName());
         return "redirect:/user/listar"; // redirige a la lista
     }
-
 }
