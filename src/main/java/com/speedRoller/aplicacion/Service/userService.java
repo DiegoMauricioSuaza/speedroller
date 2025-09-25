@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.speedroller.aplicacion.Repository.UserRepository;
 
-import com.speedroller.aplicacion.Model.userModel;
+import Model.userModel;
 
 @Service
 public class userService {
