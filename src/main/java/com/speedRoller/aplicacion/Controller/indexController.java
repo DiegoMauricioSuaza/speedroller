@@ -16,9 +16,14 @@ public class indexController {
         return "index";
     }
     
-      @GetMapping("/mision")
+    @GetMapping("/mision")
     public String mision() {
         return "mision";
+    }
+
+    @GetMapping("/vision")
+    public String vision() {
+        return "vision";
     }
 }
 

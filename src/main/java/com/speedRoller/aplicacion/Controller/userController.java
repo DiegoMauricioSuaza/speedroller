@@ -21,7 +21,7 @@ import jakarta.validation.Valid;
 @Controller
 @RequestMapping("/user")
 public class userController {
-  
+
     @Autowired
     userService usuarioService;
 
@@ -48,7 +48,7 @@ public class userController {
 
         // ¿Hubo errores de validación?
         if (result.hasErrors()) {
-            return "/user/form_user"; // vuelve al formulario, con los errores
+        return "/user/form_user"; // vuelve al formulario, con los errores
         }
         
         // Si no hay errores → guarda y redirige
